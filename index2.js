@@ -4,7 +4,7 @@ const { providers } = require('ethers');
 
 const app = express()
 
-const wsprovider = new providers.WebSocketProvider('wss://wsapi.fantom.network/');
+const wsprovider = new providers.WebSocketProvider("wss://ftm.getblock.io/mainnet/?api_key=ea820f61-b008-4a51-bd80-21abcfdcd5ae");
 
 app.use(morgan(":method :url :status :res[content-length] - :response-time ms"))
 
